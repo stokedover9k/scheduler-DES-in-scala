@@ -29,12 +29,12 @@ class SimulationSpecSuite extends FunSpec {
     it("should dispense events scheduled at the same time in FIFO fashion") {
       val des = new Simulation
       var result = ""
-      des.afterDelayDo(1, result += "[11]")
-      des.afterDelayDo(1, result += "[12]")
-      des.afterDelayDo(1, result += "[13]")
+      des.afterDelayDo(1, result += "one,")
+      des.afterDelayDo(1, result += "two,")
+      des.afterDelayDo(1, result += "three")
       
       des.run
-      assert(result == "[11][11][13]")
+      assert(result == "one,two,three")
     }
 
   }
