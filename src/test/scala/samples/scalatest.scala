@@ -29,8 +29,8 @@ import scala.collection.mutable.Stack
 import org.scalatest.Assertions
 import org.junit.Test
 
+/*
 class StackSuite extends Assertions {
-
   @Test def stackShouldPopValuesIinLastInFirstOutOrder() {
     val stack = new Stack[Int]
     stack.push(1)
@@ -46,6 +46,7 @@ class StackSuite extends Assertions {
     }
   }
 }
+*/
 
 /*
 Here's an example of a FunSuite with ShouldMatchers mixed in:
@@ -55,7 +56,7 @@ import org.scalatest.matchers.ShouldMatchers
 
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
-@RunWith(classOf[JUnitRunner])
+//@RunWith(classOf[JUnitRunner])
 class ListSuite extends FunSuite with ShouldMatchers {
 
   test("An empty list should be empty") {
